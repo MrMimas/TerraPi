@@ -104,3 +104,6 @@ while True:
         sense.show_message("Normal Mode: Room Monitoring active" + str(temp) + "°C" + str(humidity) + "%", text_colour=[0, 220, 220])  # White text for normal mode 
 
 time.sleep(20)  # Wait for 20 seconds before the next reading
+
+# Created by MrMimas
+# Not an expert python.
