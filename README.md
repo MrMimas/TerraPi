@@ -15,7 +15,7 @@ TerraPi is a work-in-progress Python project for displaying terrarium temperatur
 
 - A Raspberry Pi # Made for a Raspberry pi 4
 - A Sense HAT
-- Python 3 and the `sense_hat` library
+- Python 3 and the Type `sudo apt install sense-hat` to install the sense-hat library on your Raspberry pi.
 
 ## 📁 Project files
 
@@ -30,7 +30,7 @@ TerraPi is a work-in-progress Python project for displaying terrarium temperatur
 TerraPi is still being built, so setup and configuration may change. The goal is to make it easy to monitor terrarium conditions at a glance—right on the Pi’s LED matrix.
 
 ## 🚧 What will be
-There will be a room monitor setting. Cooler Art and joystick functions.
+There will be a room monitor setting. Cooler Art, joystick functions, Humidity.
 
 ## 🤝 Contributions
 
