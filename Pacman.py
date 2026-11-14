@@ -34,7 +34,7 @@ sense.clear()
 time.sleep(1)  # Add a short delay before ending the function
 
 def run():
-    print(f"Temperature: {temperature:.1f}°{TemperatureUnit}")
+    print(str(Main.temperature) + Main.TemperatureUnit)
     sense.show_message(str(Main.temperature) + Main.TemperatureUnit, scroll_speed=MessageSpeed)
     time.sleep(Pacman_Temptiming)  # Add a short delay after showing the message
     sense.clear()
