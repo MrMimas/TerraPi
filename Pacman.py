@@ -3,9 +3,10 @@ from pdb import run
 from sense_hat import SenseHat
 import configparser 
 import time
+from pathlib import Path
 import Main
 config = configparser.ConfigParser()
-config.read("TerraPi/settings.ini")
+config.read(Path(__file__).with_name("settings.ini"))
 Pacman_Temptiming = int(config["settings"]["Pacman_Temptiming"])
 MessageSpeed = float(config["settings"]["MessageSpeed"])
 Mode = config["settings"]["Mode"]
@@ -34,8 +35,7 @@ sense.clear()
 time.sleep(1)  # Add a short delay before ending the function
 
 def run():
-    print(str(Main.temperature) + Main.TemperatureUnit)
-    sense.show_message(str(Main.temperature) + Main.TemperatureUnit, scroll_speed=MessageSpeed)
+    sense.show_message(str(Main.temperature) + Main.TemperatureUnit, text_colour=[255, 255, 0], back_colour=[0, 0, 0], scroll_speed = float(MessageSpeed))
     time.sleep(Pacman_Temptiming)  # Add a short delay after showing the message
     sense.clear()
 
